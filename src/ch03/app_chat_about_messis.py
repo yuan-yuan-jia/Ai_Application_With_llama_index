@@ -4,8 +4,10 @@ from llama_index.readers.wikipedia import WikipediaReader
 from llama_index.llms.dashscope import DashScope,DashScopeGenerationModels
 from llama_index.embeddings.dashscope import DashScopeEmbedding,DashScopeTextEmbeddingModels
 from dotenv import load_dotenv
+import logging
 import os
-
+# 开启llama_index的日志
+logging.basicConfig(level=logging.DEBUG)
 load_dotenv()
 api_key = "DASHSCOPE_API_KEY"
 # 设置嵌入模型
