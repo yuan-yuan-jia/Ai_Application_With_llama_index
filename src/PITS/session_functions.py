@@ -1,0 +1,34 @@
+"""
+处理存储和检索会话信息-最终在云端
+"""
+
+from PITS.global_settings import SESSION_FILE
+from typing import Dict,Any
+import yaml
+import os
+
+def save_session(state:Dict[Any,Any]) -> None:
+    state_to_save = {
+        key:value for key,value in state.items()
+    }
+
+    with open(SESSION_FILE,'w') as file:
+        yaml.dump(state_to_save,file)
+
+def load_session(state:Dict[Any,Any]) -> bool:
+    if os.path.exists(SESSION_FILE):
+        with open(SESSION_FILE,'r') as file:
+            try:
+                loaded_state = yaml.safe_load(file) or {}
+                for key,value in loaded_state.items():
+                    state[key] = value
+                return True
+            except yaml.YAMLError:
+                return False
+    return False
+
+def delete_session(state:Dict[Any,Any]) -> None:
+    if os.path.exists(SESSION_FILE):
+        os.remove(SESSION_FILE)
+    for key in list(state.keys()):
+        del state[key]

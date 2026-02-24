@@ -198,6 +198,7 @@ dependencies = [
     { name = "llama-index-llms-langchain" },
     { name = "llama-index-readers-wikipedia" },
     { name = "pypdf" },
+    { name = "pyyaml" },
     { name = "streamlit" },
     { name = "wikipedia" },
 ]
@@ -212,6 +213,7 @@ requires-dist = [
     { name = "llama-index-llms-langchain", specifier = ">=0.7.1" },
     { name = "llama-index-readers-wikipedia", specifier = ">=0.4.1" },
     { name = "pypdf", specifier = ">=6.7.0" },
+    { name = "pyyaml", specifier = ">=6.0.3" },
     { name = "streamlit", specifier = ">=1.54.0" },
     { name = "wikipedia", specifier = ">=1.4.0" },
 ]

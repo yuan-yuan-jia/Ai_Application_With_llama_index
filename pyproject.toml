@@ -13,6 +13,7 @@ dependencies = [
     "llama-index-llms-langchain>=0.7.1",
     "llama-index-readers-wikipedia>=0.4.1",
     "pypdf>=6.7.0",
+    "pyyaml>=6.0.3",
     "streamlit>=1.54.0",
     "wikipedia>=1.4.0",
 ]
