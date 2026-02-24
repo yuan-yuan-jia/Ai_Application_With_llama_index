@@ -11,8 +11,10 @@ dependencies = [
     "llama-index-embeddings-dashscope>=0.4.1",
     "llama-index-llms-dashscope>=0.5.2",
     "llama-index-llms-langchain>=0.7.1",
+    "llama-index-readers-wikipedia>=0.4.1",
     "pypdf>=6.7.0",
     "streamlit>=1.54.0",
+    "wikipedia>=1.4.0",
 ]
 
 [[tool.uv.index]]

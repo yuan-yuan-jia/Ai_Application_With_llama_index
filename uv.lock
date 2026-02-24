@@ -196,8 +196,10 @@ dependencies = [
     { name = "llama-index-embeddings-dashscope" },
     { name = "llama-index-llms-dashscope" },
     { name = "llama-index-llms-langchain" },
+    { name = "llama-index-readers-wikipedia" },
     { name = "pypdf" },
     { name = "streamlit" },
+    { name = "wikipedia" },
 ]
 
 [package.metadata]
@@ -208,8 +210,10 @@ requires-dist = [
     { name = "llama-index-embeddings-dashscope", specifier = ">=0.4.1" },
     { name = "llama-index-llms-dashscope", specifier = ">=0.5.2" },
     { name = "llama-index-llms-langchain", specifier = ">=0.7.1" },
+    { name = "llama-index-readers-wikipedia", specifier = ">=0.4.1" },
     { name = "pypdf", specifier = ">=6.7.0" },
     { name = "streamlit", specifier = ">=1.54.0" },
+    { name = "wikipedia", specifier = ">=1.4.0" },
 ]
 
 [[package]]
@@ -1045,6 +1049,18 @@ dependencies = [
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/b3/77/5bfaab20e6ec8428dbf2352e18be550c957602723d69383908176b5686cd/llama_index_readers_llama_parse-0.5.1.tar.gz", hash = "sha256:2b78b73faa933e30e6c69df351e4e9f36dfe2ae142e2ab3969ddd2ac48930e37" }
 wheels = [
     { url = "https://mirrors.aliyun.com/pypi/packages/68/81/52410c7245dcbf1a54756a9ce3892cdd167ec0b884d696de1304ca3f452e/llama_index_readers_llama_parse-0.5.1-py3-none-any.whl", hash = "sha256:0d41450ed29b0c49c024e206ef6c8e662b1854e77a1c5faefed3b958be54f880" },
+]
+
+[[package]]
+name = "llama-index-readers-wikipedia"
+version = "0.4.1"
+source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
+dependencies = [
+    { name = "llama-index-core" },
+]
+sdist = { url = "https://mirrors.aliyun.com/pypi/packages/26/ad/0d07a8614aac67de2a5084783638cc12a0ac15f5c5e2adbd5fcbad583e48/llama_index_readers_wikipedia-0.4.1.tar.gz", hash = "sha256:2d6f452e139ee45ac2651ad4d257cb51809872f9ff26564bb831978f80b4b806" }
+wheels = [
+    { url = "https://mirrors.aliyun.com/pypi/packages/e5/d7/17cd9e2ff7a9cbd0350938c42f10165ccf34cbcbb22269a3af364b9dd61f/llama_index_readers_wikipedia-0.4.1-py3-none-any.whl", hash = "sha256:dcda8310d2c6285594de2d0d4e145c2b6ac8053c80690eb5176089b32ca75012" },
 ]
 
 [[package]]
@@ -2288,6 +2304,16 @@ sdist = { url = "https://mirrors.aliyun.com/pypi/packages/2c/41/aa4bf9664e4cda14
 wheels = [
     { url = "https://mirrors.aliyun.com/pypi/packages/34/db/b10e48aa8fff7407e67470363eac595018441cf32d5e1001567a7aeba5d2/websocket_client-1.9.0-py3-none-any.whl", hash = "sha256:af248a825037ef591efbf6ed20cc5faa03d3b47b9e5a2230a529eeee1c1fc3ef" },
 ]
+
+[[package]]
+name = "wikipedia"
+version = "1.4.0"
+source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
+dependencies = [
+    { name = "beautifulsoup4" },
+    { name = "requests" },
+]
+sdist = { url = "https://mirrors.aliyun.com/pypi/packages/67/35/25e68fbc99e672127cc6fbb14b8ec1ba3dfef035bf1e4c90f78f24a80b7d/wikipedia-1.4.0.tar.gz", hash = "sha256:db0fad1829fdd441b1852306e9856398204dc0786d2996dd2e0c8bb8e26133b2" }
 
 [[package]]
 name = "wrapt"
