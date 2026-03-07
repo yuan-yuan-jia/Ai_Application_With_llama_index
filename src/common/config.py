@@ -7,13 +7,13 @@ from llama_index.embeddings.dashscope import DashScopeEmbedding,DashScopeTextEmb
 from dotenv import load_dotenv
 import os
 
-__all__=["setup"]
-
+__all__=["setup","embed_model"]
+load_dotenv()
+api_key = "DASHSCOPE_API_KEY"
+embed_model = DashScopeEmbedding(model_name=DashScopeTextEmbeddingModels.TEXT_EMBEDDING_V2,api_key=os.getenv(api_key))
 def setup() -> None:
-    load_dotenv()
-    api_key = "DASHSCOPE_API_KEY"
     # 设置嵌入模型
-    Settings.embed_model = DashScopeEmbedding(model_name=DashScopeTextEmbeddingModels.TEXT_EMBEDDING_V2,api_key=os.getenv(api_key))
+    Settings.embed_model =  embed_model
 
 
     # 配置 LLM 模型

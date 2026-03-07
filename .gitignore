@@ -9,3 +9,5 @@ wheels/
 # Virtual environments
 .venv
 .env
+# PITS的运行时产生的副作用文件
+pits_run/
