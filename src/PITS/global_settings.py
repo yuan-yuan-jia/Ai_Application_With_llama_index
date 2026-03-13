@@ -16,6 +16,6 @@ CONVERSATION_FILE = PITS_RUNTIME_ROOT_PATH / "cache"/ "chat_history.json"
 QUIZ_FILE = PITS_RUNTIME_ROOT_PATH / "cache" / "quiz.csv"
 SLTDES_FILE = PITS_RUNTIME_ROOT_PATH / "cache" / "slides.json"
 STORAGE_PATH = PITS_RUNTIME_ROOT_PATH / "ingestion_storage"
-INDES_STORAGE = PITS_RUNTIME_ROOT_PATH / "index_storage"
+INDEXS_STORAGE = PITS_RUNTIME_ROOT_PATH / "index_storage"
 QUIZ_SIZE = 5
 ITEMS_ON_SLIDE = 4

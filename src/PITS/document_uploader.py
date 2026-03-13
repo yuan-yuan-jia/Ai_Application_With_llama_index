@@ -2,7 +2,6 @@
 和LlamaIndex交互，处理上传文档的数据导入和索引
 """
 from typing import Sequence
-from newspaper.images import chunk_size
 from PITS.logging_functions import log_action
 from PITS.global_settings import STORAGE_PATH,CACHE_FILE
 from llama_index.core import SimpleDirectoryReader,VectorStoreIndex
